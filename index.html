@@ -138,12 +138,12 @@
                 border: solid 1px black;
             }
         </style>
-        <table summary="table기초">
-            <caption>테이블 기초</caption>
+        <table summary="table기초"> <!-- 검색기능에서 사용하는 것 -->
+            <caption>테이블 기초</caption> <!-- 실제로 보이게 사용하는 것 -->
             <tr> <!-- table row 행 / 줄 -->
-                <th rowspan="2">제목1</th> <!-- table header --> <!-- rowspan="2"는 엑셀의 행 병합처럼 보이게 만드는 것 -->
-                <th colspan="2">제목2</th> <!-- colum 열 / 칸--> <!-- colspan="2"는 엑셀의 칸 병합처럼 보이게 만드는 것 -->
-                <th>제목3</th>
+                <th scope="col" rowspan="2">제목1</th> <!-- table header --> <!-- rowspan="2"는 엑셀의 행 병합처럼 보이게 만드는 것 -->
+                <th scope="col" colspan="2">제목2</th> <!-- colum 열 / 칸--> <!-- colspan="2"는 엑셀의 칸 병합처럼 보이게 만드는 것 -->
+                <th scope="col">제목3</th>
             </tr>
             <tr>
                 <td>내용1</td>
@@ -155,6 +155,11 @@
                 <td>내용2</td>
                 <td>내용3</td>
             </tr>
+            
+            <thead>표제목</thead>
+            <tbody>표본문</tbody>
+            <tfoot>표끝</tfoot>
+
             
         </table>
 

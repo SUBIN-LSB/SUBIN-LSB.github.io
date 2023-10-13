@@ -201,5 +201,69 @@
             <input type="submit" value="제출" /> <!-- 프론트앤드 개발과 백앤드 개발과 다름 우리의 영역이 아님 -->
         </form>
 
+        <section> <!-- 같은 주제를 가지고 있는 내용의 모임 -->
+            <h1>구획1 제목</h1>
+            구획1 내용
+        </section>
+
+        <!-- 네이버가 밑의 코드들에 대한 예시로 정말 젛으-->
+
+        <nav> <!-- 네비게이션, 페이지 이동 버튼 모임 -->
+            <ul>
+                <il><a href="링크주소">링크버튼</a></il>
+                <il><a href="링크주소">링크버튼</a></il>
+            </ul>
+            <il><a href="링크주소">링크버튼</a></il>
+        </nav>
+
+        <article> <!-- 연관성이 다소 적은 내용의 모임-->
+            <h1>기사 제목</h1>
+            기사 내용
+        </article>
+
+        <aside> <!-- 연관성이 아예없는 내용의 모임-->
+            <h1>광고 제목</h1>
+            광고 내용
+        </aside>
+
+        <header></header> <!-- 본문(body)내의 서론-->
+        <footer></footer> <!-- 본문(body)내의 결론-->
+
+        <canvas id="myCanvas"></canvas>
+        <script>
+            var canvas = document.getElementById("myCanvas");
+            //get element by id
+            //i 기준으로 요소 가져오기
+            var ctx = canvas.getContext("2d");
+            ctx.fillstyle = "#ff0000";
+
+            ctx.fillRect(25, 25, 100, 100); //채움 사각형
+            ctx.clearRect(45, 45, 60, 60); //사각형태로 지우기
+            ctx.strokeRect(50, 50, 50, 50); //윤곽 사각형
+            
+            ctx.fillStyle = "#000000";
+            ctx.beginPath(); //선그리기 시작
+            ctx.moveTo(65, 75); //펜 들어 움직이기
+            ctx.lineTo(90, 95); //선 그으며 움직이기
+            ctx.lineTo(90, 55);
+            ctx.fill(); //내부 채우기
+            
+            ctx.beginPath();
+            ctx.arc(225, 75, 50, 0, Math.PI * 2, true); // Outer circle 
+            ctx.moveTo(260, 75);
+            ctx.arc(225, 75, 35, 0, Math.PI, false);  // Mouth (clockwise)
+            ctx.moveTo(215, 65);
+            ctx.arc(210, 65, 5, 0, Math.PI * 2, true);  // Left eye
+            ctx.moveTo(245, 65);
+            ctx.arc(240, 65, 5, 0, Math.PI * 2, true);  // Right eye
+            ctx.stroke();
+        </script>
+
+        <audio>
+            <source src="2. 쇼팽 에튀드 op.10 1번.mp3" type="audio/mpeg">
+        </audio>
+        
+
+
     </body>
 </html>

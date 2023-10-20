@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> css </title>
+        <meta charset="utf-8" />
+        <style>
+            body{ color: cadetblue; }
+            div{ 
+                color: crimson;
+                color: #4d8ca5;
+                color: rgb(100%, 50%, 0%);
+                color: rgb(90, 129, 50);
+                }
+            /* css 주석 */
+        </style>
+        <!-- html 주석 -->
+        <!-- 스타일 안은 css 주석을, 그 밖은 html 주석을 사용-->
+    </head>
+    <body>
+        <div id="d1"> 상속 </div>
+
+        <style type="text/css">
+            .cascade {color:green;}
+            #specifi {color:blue;}
+        </style>
+        <div class="cascade"> 단계적으로 적용되는 스타일 </div>
+        <div class="cascade" id="specifi"> 단계적으로 적용되는 스타일 </div>
+        <div class="cascade" id="specifi" style="color:red;"> 단계적으로 적용되는 스타일 </div>
+
+        <style>
+            /* css스타일은 바디보다 헤드안에 넣는게 좋다*/
+            div{ background-color: #cae1eb;
+                 border: solid 1px #55558a;
+                }
+            #d2{
+                width: 100px;
+                height: 50px;
+            }
+        </style>
+        <div id="d2"> width height </div>
+
+        <style>
+            #d3{
+                padding: 20px;
+            }
+        </style>
+        <div id="d3"> padding </div>
+
+        <style>
+            #d4{
+                margin: 20px;
+            }
+        </style>
+        <div id="d4"> margin </div>
+
+        <style>
+            *{
+                text-decoration: underline;
+            }
+            strong{ color: #55558a;}
+            em{ color: chocolate;}
+
+        </style>
+        <strong> strong </strong>
+        <em> em </em>
+        <strong>strong2</strong>
+
+        <style>
+            .c1{font-size: 30px;}
+            #i1{font-size: 50px;}
+        </style>
+        <div class="c1"> class selector </div>
+        <div id="i1">id selector </div>
+    
+        <style>
+            #d5::first-line{
+                color: red;
+            }
+            #d5::first-letter{
+                font-size: 50px;
+            }
+            #d5::before{ content: "시작"; }
+            #d5::after{ content: "끝"; }
+            /* before, after는 꾸밈문자, css로 만들어낸 것이기 떄문에 컴퓨터가 읽어내는 정보로의 역할을 하지 못한다(ex.검색창에 검색이 되지 않는다.)*/
+        </style>
+        <div id="d5">
+            첫번째 줄, first_lien, first_lien, first_lien, first_lien, first_lien, first_lien, first_lien, first_lien, first_lien, first_lien, first_lien, first_lien, first_lien, first_lien, 
+            first_lien, first_lien, first_lien, first_lien, first_lien, first_lien, first_lien, first_lien, first_lien, first_lien, first_lien, first_lien, first_lien, first_lien, first_lien, 
+            first_lien, first_lien, first_lien, first_lien, first_lien, first_lien, first_lien, first_lien, first_lien, first_lien, first_lien, first_lien, first_lien, first_lien, first_lien, 
+            first_lien, first_lien, first_lien, first_lien, first_lien, first_lien, first_lien, first_lien, first_lien, first_lien, first_lien, first_lien, first_lien, first_lien, first_lien, 
+        </div>
+
+    </body>
+</html>

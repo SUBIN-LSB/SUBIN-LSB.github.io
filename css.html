@@ -90,5 +90,183 @@
             first_lien, first_lien, first_lien, first_lien, first_lien, first_lien, first_lien, first_lien, first_lien, first_lien, first_lien, first_lien, first_lien, first_lien, first_lien, 
         </div>
 
+         <!-- 퍼스트 ~... 를 통해 원하는 글자의 색만 바꾸는 게 가능 -->
+        <style>
+            #d6 div:first-child{
+                color: #4d8ca5;
+            }
+            #d6 div:nth-child(2){
+                color: #55558a;
+            }
+            #d6 div:last-child{
+                color: chocolate;
+            }
+        </style>
+        <div id="d6">
+             <div>div1</div>
+             <div>div2</div>
+             <div>div3</div>
+        </div>
+
+        <style>
+            /* :link, :visited, :hover, :active, :focus */
+            a:link{ /* 링크가 있다면 */
+                color: #4d8ca5;
+            }
+            a:visited{ /* 방문한적이 있다면 */
+                color: #55558a;
+            }
+            a:hover{ /* 마우스를 올리면 */
+                color: chocolate;
+                font-weight: bold;
+            }
+            a:active{ /* 마우스로 누르면 */
+                color: aquamarine;
+            }
+            a:focus{ /* 포커스 되면 */
+                color: black;
+            }
+        </style>
+        <a href="http://www.naver.com"> 네이버 </a>
+
+        <style>
+            #d7>span{ /*자식 요소 선택자*/
+                font-size: 40px;
+            }
+            #d7 span{ /*하위 요소 선택자*/
+                font-style: italic;
+            }
+            #d7>div>span{
+                font-weight: bold;
+            }
+        </style>
+        <div id="d7"> <!-- <부모1>
+                           <자식2></자식>
+                           <자식3이자 손자의 부모2>
+                                <자식의 자식4.손자1>
+                           </자식>
+                            </부모>-->
+            <span>span1</span>
+            <div>
+                <span>span2</span>
+            </div>
+        </div>
+
+        <style> /*선택자 그룹화*/
+            body{ font-size: 40px; }
+            div{ font-size: 40px; }
+            span{ font-size: 40px; }
+            body,div,span{ font-size: 40px; }
+        </style>
+
+        <style>
+            #d8{
+            width: 200px;
+            height: 200px;
+            border: solid 2px #851a3f;
+            border-left: solid 3px #55558a;
+            border-right: solid 4px #4d8ca5;
+            border-top: dotted 6px #b0d4e4;
+            border-bottom: dashed 5px #8ab3c5;
+
+            margin: 50px;
+            margin: 50px 100px; /*상하 좌우*/
+            margin: 0px 50px 100px 150px; /*상 우 하 좌*/
+            /*위에서 부터 시계방향*/
+            margin-left: 0px;
+            margin-right: 50px;
+            margin-top: 100px;
+            margin-bottom: 150px;
+
+            padding: 50px;
+            padding: 50px 100px; /*상하 좌우*/
+            padding: 0px 50px 100px 150px; /*상 우 하 좌*/
+            /*위에서 부터 시계방향*/
+            padding-left: 0px;
+            padding-right: 50px;
+            padding-top: 100px;
+            padding-bottom: 150px;
+            }
+        </style>
+        <div id="d8"> box madel </div>
+
+        <style> /*앱솔루트를 남발하다가 웹사이트 자체가 망가지는 경우가 있으므로 주의해서 사용해야한다.*/
+            #d9{
+                position: absolute;
+                left: 90px;
+                top: 70px;
+            }
+            #d10{
+                position: relative; /*관계형*/
+                /*relative인 부모는, absolute 자식의 기준이 된다.
+                앱솔루트가 문서를 기준으로 움직이지 않고 릴레이티브인 부모를 기준으로 움직이기 때문에
+                문서의 움직임에 따라 움직이는 릴레이티브인 부모를 따라 변화한다.*/
+            }
+        </style>
+        <div id="d10">
+            <div id="d9"> absolute </div>
+        </div>
+
+        <style>
+            #d11{
+                position: fixed; /*고정된*/
+                top: 0px;
+                right: 0px;
+            }
+        </style>
+        <div id="d11"> fixed </div>
+
+        <style>
+            #d12{
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 60px;
+                font-weight: bold;
+                font-style: italic;
+                text-align: center;
+                margin: 0px auto;
+                width: 300px;
+            }
+        </style>
+        <div id="d12"> font-family </div>
+        <ul>
+            <li><span style="font-family:serif;">serif : 삐침(장식)이 있는 글꼴 : ABCDabcd</span></li>
+            <li><span style="font-family:sans-serif;">sans-serif : 삐침(장식)이 없는 글꼴 : ABCDabcd</span></li>
+            <li><span style="font-family:cursive;">cursive : 필기체 : ABCDabcd</span></li>
+            <li><span style="font-family:fantasy;">fantasy : 판타지체 : ABCDabcd</span></li>
+            <li><span style="font-family:monospace;">monospace : 글자 폭과 간격이 일정 : ABCDabcd</span></li>
+          </ul>
+
+          <style>
+            #d13{
+                letter-spacing: 50px;
+                line-height: 50px;
+            }
+          </style>
+          <div id="d13"> letter spacing, line hight </div>
+
+          <style>
+            #d14{
+                white-space: pre;
+            }
+          </style>
+          <div id="d14">
+               a   b   c   d
+               e   f   g   h
+          </div>
+
+          <style>
+            #d15{
+                min width: 500px;
+                max width: 800px;
+                border-radius: 5px;
+                text-shadow: 1px 2px 3px #55558a;
+                /*가로이동,세로이동,번짐,색상*/
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                width: 800px;
+            }
+          </style>
+          <div id="d15" >min max width min max width min max width min max width min max width min max width min max width min max width min max width min max width </div>
     </body>
 </html>

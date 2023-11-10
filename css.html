@@ -188,7 +188,7 @@
             padding-bottom: 150px;
             }
         </style>
-        <div id="d8"> box madel </div>
+        <div id="d8"> box model </div>
 
         <style> /*앱솔루트를 남발하다가 웹사이트 자체가 망가지는 경우가 있으므로 주의해서 사용해야한다.*/
             #d9{
@@ -234,30 +234,30 @@
             <li><span style="font-family:cursive;">cursive : 필기체 : ABCDabcd</span></li>
             <li><span style="font-family:fantasy;">fantasy : 판타지체 : ABCDabcd</span></li>
             <li><span style="font-family:monospace;">monospace : 글자 폭과 간격이 일정 : ABCDabcd</span></li>
-          </ul>
+        </ul>
 
-          <style>
+        <style>
             #d13{
                 letter-spacing: 50px;
                 line-height: 50px;
             }
-          </style>
-          <div id="d13"> letter spacing, line hight </div>
+        </style>
+        <div id="d13"> letter spacing, line hight </div>
 
-          <style>
+        <style>
             #d14{
                 white-space: pre;
             }
-          </style>
-          <div id="d14">
+        </style>
+        <div id="d14">
                a   b   c   d
                e   f   g   h
-          </div>
+        </div>
 
-          <style>
+        <style>
             #d15{
-                min width: 500px;
-                max width: 800px;
+                min-width: 500px;
+                max-width: 800px;
                 border-radius: 5px;
                 text-shadow: 1px 2px 3px #55558a;
                 /*가로이동,세로이동,번짐,색상*/
@@ -266,7 +266,88 @@
                 text-overflow: ellipsis;
                 width: 800px;
             }
-          </style>
-          <div id="d15" >min max width min max width min max width min max width min max width min max width min max width min max width min max width min max width </div>
+        </style>
+        <div id="d15" >
+            min max width min max width min max width min max width min max width
+            min max width min max width min max width min max width min max width
+            </div>
+
+        <style>
+            #d16{
+                background-color: #8ab3c5;
+                height: 40px;
+                transition: background-color 2s, height 2s;
+            }
+            #d16:hover{
+                background-color: #4d8ca5;
+                height: 80px;
+            }
+        </style>
+        <div id="d16"> transition </div>
+
+        <style>
+            @keyframes animation17{
+                from{ background-color: #b0d4e4; }
+                to{ background-color: #4d8ca5; }
+                /*or 0%,30%,60%,100%등으로 바꾸어 애니메이션을 더 복잡하게 만드는것도 가능*/
+            }
+            #d17:hover{
+                animation-name: animation17;
+                animation-duration: 2s;
+            }
+        </style>
+        <div id="d17"> animation17 </div>
+
+        <style>
+            .col1{
+                columns: 100px 3;
+                /* 최소값 최대값 */
+            }
+        </style>
+        <div class="col1">
+            1절 - 동해물과 백두산이 마르고 닳도록
+            하느님이 보우하사 우리나라만세
+            무궁화 삼천리 화려강산 대한사람 대한으로 길이 보전하세
+            
+            2절 - 남산위에 저 소나무 철갑을 두른듯
+            바람서리 불변함은 우리기상 일세
+            무궁화 삼천리 화려강산 대한사람 대한으로 길이보전하세
+            
+            3절 - 가을하늘 공활한데 높고 구름없이 
+            밝은달은 우리가슴 일편단심일세
+            무궁화 삼천리 화려강산 대한사람 대한으로 길이보전하세
+            
+            4절 - 이 기상과 이 맘으로 충성을 다하여
+            괴로우나 즐거우나 나라사랑하세
+            무궁화 삼천리 화려강산 대한사람 대한으로 길이보전하세
+        </div>
+
+        <style>
+            #d18{
+                display: flex;
+                /* 표시방식 : 유연하게; */
+            }
+            #d18 div:nth-child(1){ flex: 1;}
+            #d18 div:nth-child(2){ flex: 4;}
+            #d18 div:nth-child(3){ flex: 9;}
+        </style>
+        <div id="d18">
+            <div> child1 </div>
+            <div> child2 </div>
+            <div> child3 </div>
+        </div>
+
+        <style>
+            #d19{
+                display: flex;
+                justify-content:  space-between;
+            }
+        </style>
+        <div id="d19">
+            <div> child1 </div>
+            <div> child2 </div>
+            <div> child3 </div>
+        </div>
+        
     </body>
-</html>
+</html> 

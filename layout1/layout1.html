@@ -9,6 +9,11 @@
             header ul{}
             #wrap>header>ul{}
             */
+            #wrap{
+                min-width: 1000px; /* 최소 넓이 */
+                max-width: 1920px; /* 최대 넓이 */
+                margin: 0px auto;
+            }
             header ul{ 
                 list-style: none;
                 display: flex;
@@ -24,6 +29,7 @@
             header{
                 display: flex;
                 justify-content: space-between;
+                padding: 5px 50px;
             }
             header h1{
                 margin: 0px;
@@ -43,12 +49,13 @@
                 display: flex;
                 justify-content: space-between;
                 background-color: #edf3f6;
+                padding: 5px 50px;
             }
             nav h2{
                 margin: 14px 0px;
             }
 
-            #content>section:nth-child(1){ background-color: #8ab3c5;}
+            #content>section:nth-child(1){ background-color: #a9cddb;}
             #content>section:nth-child(2){ background-color: #a4a4c4;}
             #content>section:nth-child(3){ background-color: #abcfdf;}
             #content>section:nth-child(4){ background-color: #9d9dc0;}
@@ -74,6 +81,28 @@
             section{
                 padding: 50px;
             }
+            footer{
+                display: flex;
+                justify-content: space-between;
+                background-color: black;
+                color: azure;
+                padding: 50px;
+            }
+            footer ul{
+                list-style: none;
+                display: flex;
+                padding: 0px;
+            }
+            footer li{
+                padding: 0px 5px;
+            }
+            footer div:first-child li{
+                border-right: solid 1px #8ab3c5;
+            }
+            footer div:first-child li:last-child{
+                border: none;
+            }
+
         </style>
     </head>
     <body>
@@ -193,6 +222,11 @@
                 <div>
                     <ul>
                         <li><img src="img/푸터1.png"/></li>
+                        <li><img src="img/푸터2.png"/></li>
+                        <li><img src="img/푸터3.png"/></li>
+                        <li><img src="img/푸터4.png"/></li>
+                        <li><img src="img/푸터5.png"/></li>
+                        <li><img src="img/푸터6.png"/></li>
                     </ul>
                 </div>
             </footer>

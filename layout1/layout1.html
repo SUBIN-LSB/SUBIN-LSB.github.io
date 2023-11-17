@@ -3,20 +3,199 @@
     <head>
         <title> layout1 </title>
         <meta charset="utf-8" />
+        <style>
+            /*
+            #wrap ul{}
+            header ul{}
+            #wrap>header>ul{}
+            */
+            header ul{ 
+                list-style: none;
+                display: flex;
+                margin:13px, 0px;
+            }
+            header li{
+                padding: 0px 10px;
+                border-right: solid 1px #8ab3c5;
+            }
+            header li:last-child{
+                border: none;
+            }
+            header{
+                display: flex;
+                justify-content: space-between;
+            }
+            header h1{
+                margin: 0px;
+            }
+            header>div>img{
+                margin: 10px 0px;
+            }
+
+            nav ul{
+                list-style: none;
+                display: flex;
+            }
+            nav li{
+                padding: 0px 10px;
+            }
+            nav{
+                display: flex;
+                justify-content: space-between;
+                background-color: #edf3f6;
+            }
+            nav h2{
+                margin: 14px 0px;
+            }
+
+            #content>section:nth-child(1){ background-color: #8ab3c5;}
+            #content>section:nth-child(2){ background-color: #a4a4c4;}
+            #content>section:nth-child(3){ background-color: #abcfdf;}
+            #content>section:nth-child(4){ background-color: #9d9dc0;}
+            #content>section>div{
+                display: flex;
+                justify-content: center;
+            }
+            #content>section>div>div{
+                margin: 0px 30px;
+            }
+            #content dt{
+                font-weight: bold;
+            }
+            #content dd{
+                margin: 0px;
+            }
+            h3{
+                margin: 0px;
+                margin-bottom: 30px;
+                color: azure;
+                font-weight: normal;
+            }
+            section{
+                padding: 50px;
+            }
+        </style>
     </head>
     <body>
         <div id="wrap">
             <header>
-                <h1><img src="" /></h1>
-                <li> ABOUT </li>
-                <li> SERVICES </li>
-                <li> WORKS </li>
-                <li> BLOG </li>
-                <li> CONTACT US </li>
-            </header
-            <nav> nav </nav>
-            <div id="content"> content </div>
-            <footer> footer </footer>
+                <h1><img src="img/로고.png" /></h1>
+                <ul>
+                    <li> ABOUT </li>
+                    <li> SERVICES </li>
+                    <li> WORKS </li>
+                    <li> BLOG </li>
+                    <li> CONTACT US </li>
+                </ul>
+                <div><img src="img/줌.png" /></div>
+            </header>
+
+            <nav>
+                <h2> See Our Works </h2>
+                <ul>
+                    <li> wed design </li>
+                    <li> icons </li>
+                    <li> illustrations </li>
+                    <li> misscellaneous </li>
+                </ul>
+                <div></div>
+            </nav>
+
+            <div id="content">
+                <section>
+                    <h3> Wad Design </h3>
+                    <div>
+                        <div>
+                            <img src="img/이미지1.png" />
+                            <dl>
+                                <dt> iPhone App </dt>
+                                <dd> Lorem ipsum dolor sit amet, coesectetur adipiscing elt. </dd>
+                            </dl>
+                        </div>
+                        <div>
+                            <img src="img/이미지2.png" />
+                            <dl>
+                                <dt> John Henry Doe </dt>
+                                <dd> Lorem ipsum dolor sit amet, coesectetur adipiscing elt. </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h3> Icons </h3>
+                    <div>
+                        <div>
+                            <img src="img/이미지3.png" />
+                            <dl>
+                                <dt> Coffee </dt>
+                                <dd> Lorem ipsum dolor sit amet, coesectetur adipiscing elt. </dd>
+                            </dl>
+                        </div>
+                        <div>
+                            <img src="img/이미지4.png" />
+                            <dl>
+                                <dt> TV </dt>
+                                <dd> Lorem ipsum dolor sit amet, coesectetur adipiscing elt. </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h3>Illustrations </h3>
+                    <div>
+                        <div>
+                            <img src="img/이미지5.png" />
+                            <dl>
+                                <dt> Blue Bird </dt>
+                                <dd> Lorem ipsum dolor sit amet, coesectetur adipiscing elt. </dd>
+                            </dl>
+                        </div>
+                        <div>
+                            <img src="img/이미지6.png" />
+                            <dl>
+                                <dt> Egg </dt>
+                                <dd> Lorem ipsum dolor sit amet, coesectetur adipiscing elt. </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h3> Misscellaneous </h3>
+                    <div>
+                        <div>
+                            <img src="img/이미지7.png" />
+                            <dl>
+                                <dt> Space ship </dt>
+                                <dd> Lorem ipsum dolor sit amet, coesectetur adipiscing elt. </dd>
+                            </dl>
+                        </div>
+                        <div>
+                            <img src="img/이미지8.png" />
+                            <dl>
+                                <dt> Box </dt>
+                                <dd> Lorem ipsum dolor sit amet, coesectetur adipiscing elt. </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <footer>
+                <div>
+                    <ul>
+                        <li>home</li>
+                        <li>about</li>
+                        <li>services</li>
+                        <li>work</li>
+                    </ul>
+                    <p>copyright</p>
+                    <p>discription</p>
+                </div>
+                <div>
+                    <ul>
+                        <li><img src="img/푸터1.png"/></li>
+                    </ul>
+                </div>
+            </footer>
         </div>
     </body>
 </html>

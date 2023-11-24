@@ -4,6 +4,10 @@
         <title> layout2 </title>
         <meta charset="utf-8" />
         <style>
+            #wrap{
+            min-width: 1000px;
+            max-width: 1920px;
+            }
             header{
                 display: flex;
                 justify-content: space-between;
@@ -56,12 +60,42 @@
             }
             section h3{
                 color: #509088;
+                font-size: 30px;
             }
-            #section1 ul{
+            #content1{
+                padding: 80px;
+            }
+            #content1 ul{
                 display: flex;
                 list-style: none;
+                padding: 0px;
+                margin-top: 70px;
             }
-
+            #content1 li{
+                border-right: solid 1px #509088;
+                padding: 60px;
+            }
+            #content1 li:last-child{
+                border: none;
+            }
+            #content1 dd{
+                margin: 0px;
+            }
+            #content2 ul{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap; /* 유연-줄바꿈 : 줄바꿈 하기 */
+                list-style: none;
+                padding: 0px;
+                margin-top: 70px;
+            }
+            #content2 li{
+                width: 25%; /* 들어갈 수 있는 공간을 100%로 봤을때. 넓이를 1/4로 */
+            }
+            #content2 li img{
+                width: 100%; /* 들어갈 수 있는 공간의 25% */
+                display: block;
+            }
         </style>
     </head>
     <body>
@@ -82,11 +116,11 @@
                 <p>Orem ipsum dolor sit amet, consectetur</p>
                 <div class="button"> KNOW MORE </div>
             </div>
-            <section id="section1">
+            <section id="content1">
                 <h3> ABOUT ME </h3>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, do eiusmo tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim vaniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, do eiusmo tempor incididunt ut labore et<br />
+                    dolore magna aliqua. Ut enim ad minim vaniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea<br />
                     commodo consequat duis aute irure dolor
                 </p>
                 <ul>
@@ -136,7 +170,23 @@
                     </li>
                 </ul>
             </section>
-            <section id="section2"> content2 </section>
+            <section id="content2">
+                <h3> MY WORK </h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, do eiusmo tempor<br />
+                    incididunt ut labore et dolore magna aliqua.
+                </p>
+                <ul>
+                    <li> <img src="img/워크이미지1.png" /> </li>
+                    <li> <img src="img/워크이미지2.png" /> </li>
+                    <li> <img src="img/워크이미지3.png" /> </li>
+                    <li> <img src="img/워크이미지4.png" /> </li>
+                    <li> <img src="img/워크이미지5.png" /> </li>
+                    <li> <img src="img/워크이미지6.png" /> </li>
+                    <li> <img src="img/워크이미지7.png" /> </li>
+                    <li> <img src="img/워크이미지8.png" /> </li>
+                </ul>
+            </section>
         </div>
     </body>
 </html>

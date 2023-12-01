@@ -5,30 +5,47 @@
         <meta charset="utf-8" />
         <link rel="stylesheet" type="text/css" href="style.css" />
         <style>
+            #wrap{
+                min-width: 1000px;
+                max-width: 1920px;
+                margin: 0px auto;
+            }
             body{
+                background-image: url("img/배경1.png");
                 color:aliceblue;
             }
-            h1{
-                background-image:url(img/베너.png);
+            .long_line{
+                border-top: dotted 1px aliceblue;
+                margin: 15px 0px;
+            }
+            #main_visual{
+                background-image:url(img/베너신규.png);
                 background-repeat: no-repeat;
                 background-color: black;
                 background-position: 50% 50%;
                 background-size: cover;
-                padding: 350px;
+                padding: 250px 0px;
                 text-align: center;
             }
-            
-            #d1{
-                position: fixed;
-                top: 0px;
-                right: 0px;
+            #main_visual h1{
+                font-size: 60px;
+                letter-spacing: 20px;
+                margin: 0px;
+                text-shadow: 2px 2px 2px black;
+            }
+            #main_visual p{
+                margin: 6px;
             }
         </style>
     </head>
     <body>
-        <h1 style="font-family:fantasy;"> PORTFOLIO </h1>
-        
-        <div id="d1"> 메뉴 </div>
-
+        <div id="wrap">
+            <div id="main_visual">
+                <div class="long_line"></div>
+                <h1 style="font-family:fantasy;"> PORTFOLIO </h1>
+                <p> 2023. 03. 02 ~ 2023. 12. 22 </p>
+                <div class="long_line"></div>
+            </div>
+        </div>
     </body>
 </html>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> 기말평가 - 포트폴리오 </title>
+        <title> ＰＯＲＴＦＯＬＩＯ </title>
         <meta charset="utf-8" />
         <link rel="stylesheet" type="text/css" href="style.css" />
         <style>
@@ -13,12 +13,34 @@
             body{
                 background-image: url("img/배경1.png");
                 color:aliceblue;
+                padding-top: 33px;
+            }
+            header{
+                position: fixed;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                display: flex;
+                z-index: 10;
+                justify-content: space-between;
+                padding: 10px 50px;
+                margin-bottom: 5px;
+                background-color: #33303e;
+            }
+            header ul{
+                list-style: none;
+                display: contents;
+                margin:13px, 0px;
             }
             .long_line{
                 border-top: dotted 1px aliceblue;
                 margin: 15px 0px;
             }
-            #main_visual{
+            .short_line{
+                width: 600px;
+                border-top: dotted 1px aliceblue;
+            }
+            #main_visual1{
                 background-image:url(img/베너신규.png);
                 background-repeat: no-repeat;
                 background-color: black;
@@ -27,25 +49,450 @@
                 padding: 250px 0px;
                 text-align: center;
             }
-            #main_visual h1{
+            #main_visual1 h1{
                 font-size: 60px;
                 letter-spacing: 20px;
                 margin: 0px;
                 text-shadow: 2px 2px 2px black;
             }
-            #main_visual p{
+            #main_visual1 p{
+                margin: 6px;
+            }
+            #content{
+                text-align: center;
+                padding: 30px;
+                margin-top: 50px;
+            }
+            #content p{
+                font-size: 14px;
+            }
+            #content1{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-top: 50px;
+            }
+            #content ul{
+                display: flex;
+                list-style: none;
+                padding: 0px;
+                margin-top: 70px;
+            }
+            #content li{
+                padding: 60px;
+            }
+            h2{
+                margin-top: 70px;
+                letter-spacing: 10px;
+                font-size: 30px;
+            }
+            h2::after{ content: "···";}
+            .content{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .music_player_card>div:first-child{
+                width: 150px;
+                height: 200px;
+                border-radius: 10% 0% 0%;
+                background-color: #33303e;
+                position: relative;
+                right: 45px;
+                
+            }
+            .box{
+                width: 200px;
+                height: 200px; 
+                border-radius: 70%;
+                overflow: hidden;
+            }
+            .profile{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .music_player_card>div:first-child>div{
+                position: relative;
+                left: 50px;
+            }
+            .card{
+                width: 310px;
+                background-color: #33303e;
+                margin: 20px;
+                padding: 10px;
+            }
+            .card h2{
+                margin-top: 0px;
+            }
+            .ard>div:last-child{
+                padding: 25px;
+            }
+            .card>div:first-child{
+                position: relative;
+            }
+            .card img{
+                display: block;
+            }
+
+            .card p{
+                margin: 0px;
+            }
+            .category{
+                background-color: black;
+                color: white;
+                position: absolute;
+                left: 0px;
+                bottom: -20px;
+            }
+            h3{
+                font-size: 20px
+            }
+            a{
+                color: inherit;
+                text-decoration: none;
+            }
+            a:hover{
+                color: #b3b2c5;
+                transition: 1s;
+            }
+            .music__control{
+                width: 100%;
+                height: 50px;
+            }
+            .music__control .progress{
+                width: 100%;
+                height: 3px;
+                background: white;
+                border-radius: 3px;
+            }
+            .music__control .progress .bar{
+                width: 0;
+                height: inherit;
+                background: #b3b2c5;
+                border-radius: 5px;
+            }
+            .music__control .progress .timer{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 3px;
+            }
+            .music__control .control{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 40px;
+                padding: 0 40px;
+            }
+            #triangle-right{
+                display: flex;
+                position: relative;
+                left: 146px;
+                border-top: 10px solid transparent;
+                border-left: 15px solid white;
+                border-bottom: 10px solid transparent;
+            }
+            #triangle-right:hover{
+                border-left: 15px solid #b3b2c5;
+                transition: 1s;
+            }
+            #content2{
+                text-align: center;
+                padding: 30px 100px;
+                margin-top: 50px;
+                margin-bottom: 100px;
+            }
+            #content_card{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .screen{
+                width: 670px;
+                margin: 20px;
+            }
+            .screen dd{
+                font-size: 14px;
+                margin: 40px;
+            }
+            .category{
+                background-color: #33303e;
+                color: white;
+                position: absolute;
+                left: 0px;
+                bottom: 0px;
+            }
+            .screen>div:first-child{
+                position: relative;
+            }
+            .screen img{
+                display: block;
+            }
+            #content2 ul{
+                flex-direction: row;
+                flex-wrap: wrap;
+                list-style: none;
+                padding: 0px;
+                margin-top: 70px;
+            }
+            h4{
+                font-size: 20px;
+                margin-top: 30px;
+            }
+            footer ul{ 
+                list-style: none;
+                display: flex;
+                margin:13px, 0px;
+            }
+            footer li{
+                padding: 0px 10px;
+                border-right: solid 1px #8ab3c5;
+            }
+            footer li:last-child{
+                border: none;
+            }
+            footer{
+                display: flex;
+                justify-content: space-between;
+                padding: 50px;
+                background-color: #33303e;
+            }
+            footer h1{
+                margin: 0px;
+            }
+            footer>div>img{
+                margin: 5px;
+            }
+            #main_visual2{
+                background-image:url(img/스크린샷\(1289\).png);
+                background-repeat: no-repeat;
+                background-color: black;
+                background-position: 50% 50%;
+                background-size: cover;
+                padding: 50px 0px 400px 40px;
+            }
+            #main_visual2 h1{
+                font-size: 60px;
+                letter-spacing: 20px;
+                margin: 0px;
+                text-shadow: 2px 2px 2px black;
+            }
+            #main_visual2 p{
                 margin: 6px;
             }
         </style>
     </head>
     <body>
         <div id="wrap">
-            <div id="main_visual">
+            <a id="index1"></a>
+            <header>
+                <ul>
+                    <li> <a href="#index1"> 𝙷𝙾𝙼𝙴 </a> </li>
+                    <li> <a href="#index2"> 𝙰𝙱𝙾𝚄𝚃 </a> </li>
+                    <li> <a href="#index3"> 𝚆𝙾𝚁𝙺𝚂 </a> </li>
+                    <li> <a href="#index4"> 𝙼𝙾𝚁𝙴 </a> </li>
+                </ul>
+            </header>
+            <div id="main_visual1">
                 <div class="long_line"></div>
-                <h1 style="font-family:fantasy;"> PORTFOLIO </h1>
+                <h1> ＰＯＲＴＦＯＬＩＯ </h1>
                 <p> 2023. 03. 02 ~ 2023. 12. 22 </p>
                 <div class="long_line"></div>
             </div>
+            <section id="content">
+                <a id="index2"></a>
+                <h2> 𝙲𝙷𝙾𝙸𝙲𝙴 𝚈𝙾𝚄𝚁 𝚂𝙾𝙽𝙶 </h2>
+                <div class="content">
+                    <section class="music_player_card">
+                        <div>
+                            <div class="box" style="background: #33303e;">
+                                <img class="profile" src="img/주인공얼굴.gif">
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <p>
+                    Before viewing the site, it gives you three options.
+                    It is to choose a song that matches the site.
+                    Choose one song that you are attracted to. <br />
+                    Choosing a song will make you have a little more fun looking at the site.
+                </p>
+                <section id="content1">
+                    <div class="card">
+                        <div>
+                            <img Width="310px" height="auto" src="img/주인공과거1.png" />
+                        </div>
+                        <div>
+                            <h3> 𝚂𝙴𝚁𝙴𝙽𝙰𝙳𝙴 </h3>
+                            <div class="long_line"></div>
+                            <div class="music__control">
+                                <div class="progress">
+                                    <div class="bar">
+                                        <audio id="main-audio" src="mp3/07-Liszt-Schwanengesang_S560-Horowitz1986.mp3"></audio>
+                                    </div>
+                                    <div class="timer">
+                                        <span class="current">0:00</span>
+                                        <span class="duration">5:43</span>
+                                    </div>
+                                    <div class="center">
+                                        <i title="재생" class="play" id="control-play"> <div id="triangle-right"></div> </i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div>
+                            <img Width="310px" height="auto" src="img/주인공1.png" />
+                        </div>
+                        <div>
+                            <h3> 𝙼𝙾𝙼𝙴𝙽𝚃 𝙼𝚄𝚂𝙸𝙲𝙰𝚄𝚇 𝙽𝚘. 𝟹 </h3>
+                            <div class="long_line"></div>
+                            <div class="music__control">
+                                <div class="progress">
+                                    <div class="bar">
+                                        <audio id="main-audio" src="mp3/06-Schubert-6_Moment_musicaux_Op94-Horowitz1987.mp3"></audio>
+                                    </div>
+                                    <div class="timer">
+                                        <span class="current">0:00</span>
+                                        <span class="duration">2:01</span>
+                                    </div>
+                                    <div class="center">
+                                        <i title="재생" class="play" id="control-play"> <div id="triangle-right"></div> </i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div>
+                            <img Width="310px" height="auto" src="img/보물상자.png" />
+                        </div>
+                        <div>
+                            <h3> 𝙹𝙸𝙼𝙱𝙾'𝚜 𝙻𝚄𝙻𝙻𝙰𝙱𝚈 </h3>
+                            <div class="long_line"></div>
+                            <div class="music__control">
+                                <div class="progress">
+                                    <div class="bar">
+                                        <audio id="main-audio" src="mp3/Children's Corner Suite - Jimbo's Lullaby.mp3"></audio>
+                                    </div>
+                                    <div class="timer">
+                                        <span class="current">0:00</span>
+                                        <span class="duration">3:57</span>
+                                    </div>
+                                    <div class="center">
+                                        <i title="재생" class="play" id="control-play"> <div id="triangle-right"></div> </i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section id="content2">
+                <a id="index3"></a>
+                <h2> 𝙼𝚈 𝚆𝙾𝚁𝙺𝚂 </h2>
+                <br/>
+                <section id="content_card">
+                    <section class="screen">
+                            <div>
+                                <img width="670px" height="auto" src="img/스디1.gif" />
+                                <div class="category"> 𝟹𝙳 𝙶𝚁𝙰𝙿𝙷𝙸𝙲, 𝟹𝙳𝚜 𝙼𝙰𝚇 </div>
+                            </div>
+                            <dl>
+                                <dt> <h4> 𝙵𝙸𝚁𝚂𝚃 𝟹𝙳 𝙿𝚁𝙾𝙹𝙴𝙲𝚃 </h4> </dt>
+                                <dd>
+                                    In the first project, a ghost devil and a pumpkin devil are seen cooking illegally in a cemetery.<br/>
+                                    In front of the cemetery, they are doing a ritual action to turn a poor skeleton into porridge with a huge pot.
+                                    You have to look at the face of that poor skeleton.
+                                    That poor face tells us that he is turning into a red porridge without budging.
+                                </dd>
+                            </dl>
+                    </section>
+                    <section class="screen">
+                        <div>
+                            <img width="670px" height="auto" src="img/모션1.gif" />
+                            <div class="category"> 𝙼𝙾𝚃𝙸𝙾𝙽 𝙶𝚁𝙰𝙿𝙷𝙸𝙲, 𝙰𝙵𝙴𝚃𝙴𝚁 𝙴𝙵𝙵𝙴𝙲𝚃𝚂 </div>
+                        </div>
+                        <dl>
+                            <dt> <h4> 𝙼𝙾𝚃𝙸𝙾𝙽 𝙶𝚁𝙰𝙿𝙷𝙸𝙲S 𝙿𝚁𝙾𝙹𝙴𝙲𝚃 </h4> </dt>
+                            <dd>
+                                The video is about a short trip to a UFO, which represents a futile person's life.<br/>
+                                From the beginning of the video, the video begins with a short title: UFO. According to UFO, the camera shows a spectacular journey.
+                                However, UFO. However, UFO occurs because of a black hole in a black hole,
+                                which makes very short trips in the black hole
+                            </dd>
+                        </dl>
+                    </section>
+                    <section class="screen">
+                        <div>
+                            <img width="670px" height="auto" src="img/콘디1.gif" />
+                            <div class="category"> 𝚆𝙴𝙱 𝙳𝙴𝚂𝙸𝙶𝙽, 𝙵𝙸𝙶𝙼𝙰 </div>
+                        </div>
+                        <dl>
+                            <dt> <h4> 𝙲𝙾𝙽𝚃𝙴𝙽𝚃 𝙳𝙴𝚂𝙸𝙶𝙽 𝙿𝚁𝙾𝙹𝙴𝙲𝚃 </h4> </dt>
+                            <dd>
+                                The website is a promotional site for the virtual visual Nobel game "Emission Diary,"<br/>
+                                which tells the story of a shaman named Junhwa Park who begins her exorcism in earnest when a monster is seen in one morning.
+                                Within the site, there are the logo of the game, a guide to the monster appearing in the game,
+                                the background story of the main character Junhwa Park, and a link to the short mini-game on the main page.
+                            </dd>
+                        </dl>
+                    </section>
+                    <section class="screen">
+                            <div>
+                                <img width="670px" height="auto" src="img/스디2.gif" />
+                                <div class="category"> 𝟹𝙳 𝙶𝚁𝙰𝙿𝙷𝙸𝙲, 𝟹𝙳𝚜 𝙼𝙰𝚇 </div>
+                            </div>
+                            <dl>
+                                <dt> <h4> 𝚂𝙴𝙲𝙾𝙽𝙳 𝟹𝙳 𝙿𝚁𝙾𝙹𝙴𝙲𝚃 </h4> </dt>
+                                <dd>
+                                    The second project features a ghost demon making a new ghost friend using forbidden magic.
+                                    This magic, which can be done with just the scattered corn candy,<br />
+                                    takes place in the middle of the cemetery.
+                                    But the poor ghost watching the whole situation from a distance is just shaking in fear.<br />
+                                    The ghost in the tombstone, who knows nothing, wakes up to the call of the ghost demon.
+                                </dd>
+                            </dl>
+                    </section>
+                </section>
+            </section>
+            <a id="index4"></a>
+            <div id="main_visual2">
+                <h1> ＡＢＯＵＴ ＭＥ </h1>
+                <div class="short_line"></div>
+                <p>If you want to see more of my story, please contact me through the contact information on the bottom</p>
+            </div>
+            <footer>
+                <div>
+                    <p>
+                        𝚃𝚆𝙸𝚃𝚃𝙴𝚁 ··· <br />
+                        @I_liINlIiWill_
+                    </p>
+                    <p>
+                        𝚈𝙾𝚄𝚃𝚄𝙱𝙴 ··· <br />
+                        @𝙱𝙰𝙻𝙾𝙲𝙷𝙰𝙽𝙶𝙴𝚄𝙻
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        𝙱𝙻𝙾𝙶 ··· <br />
+                        𝚙𝚊𝚢𝚊𝚒𝚜𝟶𝟶𝟸
+                    </p>
+                    <p>
+                        EMAIL ··· <br />
+                        𝚙𝚊𝚢𝚊𝟻𝟿𝟻𝟿@𝚐𝚖𝚊𝚒𝚕.𝚌𝚘𝚖
+                    </p>
+                </div>
+                <div>
+                    <h1><img width="40px" height="auto" src="img/SM_GAME_BOT.png" /></h1>
+                    <p>If you want to see more of my story, please contact me through the contact information on the left</p>
+                </div>
+            </footer> 
         </div>
     </body>
 </html>
